@@ -25,10 +25,5 @@ public class CompanyAdministrationController {
 	public CompanyDto createCompany(@RequestBody CompanyDto companyDto) {
 		return companyAdministrationService.createCompany(companyDto);
 	}
-	
-	@GetMapping
-	public CompanyDto companyDto() {
-		return new CompanyDto();
-	}
 
 }
